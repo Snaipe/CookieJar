@@ -14,6 +14,10 @@ public class ClassReflector {
 		this.clazz = clazz;
 	}
 	
+	/**
+	 * Returns the class reflector targeting the super class of this class reflector.
+	 * @return the superclass' class reflector.
+	 */
 	public ClassReflector superClass() {
 		return new ClassReflector(clazz.getSuperclass());
 	}
